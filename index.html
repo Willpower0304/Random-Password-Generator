@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/contrasena.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c5fad524f.js" crossorigin="anonymous"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <!-- nav items -->
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+      
+        <!-- logo -->
+        <a href="/" class="menu-logo">
+          <img src="images/logo.png" alt="My Awesome Website"/>
+        </a>
+      
+        <!-- menu items -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#home" id="boton">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#About" id="boton">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#Questions">
+                Questions 
+              </a>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Home items -->
+    <div class="container" id="Home">
+        <h1>Generate a <span>Random Password</h1>
+        <div class="display">
+            <input 
+            type="text"
+            id="password"
+                  placeholder="Password">
+            <img src="images/copy.png" alt="copy Image" onclick="copyPassword()">
+        </div>
+        <button onclick="createpPassword()">
+        <img src="images/generate.png" alt="Generator Image">Generate Password</button>
+
+        <!-- Backgronund items -->
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+    </div>
+
+    <!-- About items -->
+    <section class="About" id="About">
+        <div class="wrapper">
+          <h1 class="title-about">What contributes to a password's strength?</h1>
+            <div class="box-area">
+              <div class="icon-area">
+                <img src="images/long.png" alt="Long image">
+              </div>
+              <h6>Length</h6>
+              <p>
+                The greater the length of a password, the higher its security.
+                An effective password ought to consist of a minimum of 10 characters.
+              </p>
+            </div>
+            <div class="box-area custom">
+              <div class="icon-area">
+                <img src="images/complex.png" alt="Long image">
+              </div>
+              <h6>Robust</h6>
+              <p>
+                Robust passcodes incorporate a blend of alphabets, numerals, cases,
+                and symbols to create an unpredictable sequence of characters that doesn't
+                mimic words or names.
+              </p>
+            </div>
+            <div class="box-area">
+              <div class="icon-area">
+                <img src="images/unique.png" alt="Long image">
+              </div>
+              <h6>Unique</h6>
+              <p>
+                A potent password should be distinct for every account to
+                minimize susceptibility in case of a breach.
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Questions items -->
+    <section class="Questions-Section" id="Questions">
+      <div class="container-Questions">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false" class="button-Questions">
+              <span class="accordion-title">Why should I utilize Password Creator?</span>
+              <span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>
+                We've devised an internet-based passcode creator to assist in safeguarding
+                your confidential data. Our complimentary passcode creator depends on mathematical
+                unpredictability derived from an algorithm to produce genuinely secure, random passcodes.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false" class="button-Questions">
+              <span class="accordion-title">Is necessary a individual password?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Indeed, it's imperative to maintain a distinct passcode for every online account you possess.
+                In the event of a security breach, passwords are frequently stored in a compromised password
+                repository by hackers.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false" class="button-Questions">
+              <span class="accordion-title">
+              Could password generators be compromised?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Engaging an unfamiliar online random sequence generation tool for your passcodes poses 
+                potential risks. Utilizing a complimentary online passcode generator could expose you to
+                decryption or dissemination of compromised data, thereby allowing hackers to obtain your
+                personal information.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false" class="button-Questions">
+              <span class="accordion-title">What ensures a password's security?</span>
+              <span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>
+                In this digital age, it's vital to generate a unique passcode for every website to safeguard
+                your confidential data. Individuality, length, inclusion of uppercase and lowercase letters,
+                special characters, symbols, and numbers are essential attributes that ensure a passcode's security.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false" class="button-Questions">
+              <span class="accordion-title">How can I acquire a random passcode?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                This tool will produce numerous random passcodes comprising numbers, letters, and symbols,
+                which even the most adept hackers cannot predict. Reliable passcode generators leverage cryptographic
+                entropy or randomness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer items -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+        <a href="https://github.com/Willpower0304" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/willpower0304/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/william-espinoza-7687722ab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/willpower042" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        © 2024 - Almost all rights reserved || Designed By: William Espinoza 
+        </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+
+        //Navbar <a> function //
+        let boton = document.getElementById('boton');
+
+        //Ramdom Password function //
+        const passwordBox = document.getElementById("password");
+        const lenght = 12;
+
+        const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+        const number = "0123456789";
+        const symbol = "@#$%^&*()_+~|}{[]></-=";
+
+        const allChars = upperCase + lowerCase + number + symbol;
+
+        function createpPassword(){
+            let password = "";
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+            password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            password += number[Math.floor(Math.random() * number.length)];
+            password += symbol[Math.floor(Math.random() * symbol.length)];
+
+            while(lenght > password.length){
+                password += allChars[Math.floor(Math.random() * symbol.length)];
+            }
+            passwordBox.value = password;
+        }
+
+        function copyPassword(){
+            passwordBox.select();
+            document.execCommand("copy");
+        }
+        
+        //Questions bottons function //
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+          const itemToggle = this.getAttribute('aria-expanded');
+          
+          for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+          }
+          
+          if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+          }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+    </script>
+    
+</body>
+</html>
