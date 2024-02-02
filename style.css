@@ -75,7 +75,7 @@ html {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: #d4d4d4;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -455,7 +455,7 @@ section {
 	color: #eee7e7;
 }
 
-.box-area h6 {
+.box-area h1 {
 	margin-bottom: 20px;
 	color: #ffffff;
 	font-size: 25px;
@@ -477,7 +477,7 @@ section {
 	color: #fff;
 }
 
-.box-area:hover h6 {
+.box-area:hover h1 {
 	color: #fff;
 }
 
