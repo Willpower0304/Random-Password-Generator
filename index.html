@@ -32,10 +32,10 @@
         </a>
       
         <!-- menu items -->
-        <div class="menu">
+        <div class="menu" >
           <ul>
             <li>
-              <a href="#home" id="boton">
+              <a href="#Home" id="boton">
                 Home
               </a>
             </li>
@@ -62,11 +62,12 @@
             <input 
             type="text"
             id="password"
-                  placeholder="Password">
+            placeholder="Password">
             <img src="images/copy.png" alt="copy Image" onclick="copyPassword()">
         </div>
         <button onclick="createpPassword()">
-        <img src="images/generate.png" alt="Generator Image">Generate Password</button>
+          <img src="images/generate.png" alt="Generator Image">Generate Password
+        </button>
 
         <!-- Backgronund items -->
         <ul class="background">
@@ -263,6 +264,22 @@
         }
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+        //Burger Menu botton function //
+        const checkbox = document.querySelector('.menu-container input[type="checkbox"]');
+
+        // Obtiene todos los elementos de menú dentro del menú
+        const menuItems = document.querySelectorAll('.menu a');
+
+        // Agrega un listener de eventos de clic a cada elemento de menú
+        menuItems.forEach(item => {
+          item.addEventListener('click', () => {
+            // Cierra el menú cambiando el estado del checkbox
+            checkbox.checked = false;
+          });
+        });
+
 
     </script>
     
